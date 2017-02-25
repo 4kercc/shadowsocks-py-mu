@@ -1,9 +1,9 @@
-<h1>先感谢原作者！<h1>
+先感谢原作者！
 
 
 -----------------------------------
 程序搬运于：
-forked from http://fsgmhoward/shadowsocks-py-mu
+ http://fsgmhoward/shadowsocks-py-mu
 -----------------------------------
 
 <br>
@@ -12,12 +12,12 @@ forked from http://fsgmhoward/shadowsocks-py-mu
 cd /home    #安装至home目录，方便管理。<br>
 yum -y install git  m2crypto python-setuptools      #安装git管理工具及常用软件<br>
 git clone https://github.com/4kercc/shadowsocks-py-mu.git >/dev/null 2>&1    #获取程序<br>
-cd shadowsocks-py-mu/shadowsocks<br>    #进入程序目录<br>
-cp config_example.py config.py<br>      #复制配置文件一份
-easy_install pip     #安装pip管理工具
-pip install cymysql     #安装cymysql，pip的mysql控制程序
-到此安装程序完成
-修改数据库即可使用
+cd shadowsocks-py-mu/shadowsocks    #进入程序目录<br>
+cp config_example.py config.py     #复制配置文件一份<br>
+easy_install pip     #安装pip管理工具<br>
+pip install cymysql     #安装cymysql，pip的mysql控制程序<br>
+到此安装程序完成<br>
+修改数据库即可使用<br>
 Install instruction for MU API user
 -----------------------------------
 1. install a panel which supports MU API (the known one is [SS-Panel V3](https://github.com/orvice/ss-panel))
