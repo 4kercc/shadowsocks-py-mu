@@ -6,14 +6,14 @@
 forked from http://fsgmhoward/shadowsocks-py-mu
 -----------------------------------
 
-
-安装步骤：（可一次性复制到终端执行，#为注释，shell自动忽略）
-++++++++++++++++++++++++++
-cd /home    #安装至home目录，方便管理。
-yum -y install git  m2crypto python-setuptools      #安装git管理工具及常用软件
-git clone https://github.com/4kercc/shadowsocks-py-mu.git >/dev/null 2>&1    #获取程序
-cd shadowsocks-py-mu/shadowsocks    #进入程序目录
-cp config_example.py config.py      #复制配置文件一份
+<br>
+安装步骤：（可一次性复制到终端执行，#为注释，shell自动忽略）<br>
+++++++++++++++++++++++++++<br>
+cd /home    #安装至home目录，方便管理。<br>
+yum -y install git  m2crypto python-setuptools      #安装git管理工具及常用软件<br>
+git clone https://github.com/4kercc/shadowsocks-py-mu.git >/dev/null 2>&1    #获取程序<br>
+cd shadowsocks-py-mu/shadowsocks<br>    #进入程序目录<br>
+cp config_example.py config.py<br>      #复制配置文件一份
 easy_install pip     #安装pip管理工具
 pip install cymysql     #安装cymysql，pip的mysql控制程序
 到此安装程序完成
