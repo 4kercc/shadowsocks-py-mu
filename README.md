@@ -1,33 +1,28 @@
-About shadowsocks-python manyuser
-=================================
-This is a multi-user version of shadowsocks-python. Requires a mysql database or a panel which supports SS MU API.
+<h1>先感谢原作者！<h1>
 
-Install instruction for database user
--------------------------------------
-1. install MySQL Server 5.x.x
-2. install cymysql library by `pip install cymysql`
-3. create a database named `shadowsocks`
-4. import `shadowsocks.sql` into `shadowsocks`
-5. copy `config_example.py` to `config.py` and edit it following the notes inside (but DO NOT delete the example file). You do not need to edit the API section.
-6. TestRun `cd shadowsocks && python servers.py` (not server.py)
 
+-----------------------------------
+程序搬运于：
+forked from http://fsgmhoward/shadowsocks-py-mu
+-----------------------------------
+
+
+安装步骤：（可一次性复制到终端执行，#为注释，shell自动忽略）
+++++++++++++++++++++++++++
+cd /home    #安装至home目录，方便管理。
+yum -y install git  m2crypto python-setuptools      #安装git管理工具及常用软件
+git clone https://github.com/4kercc/shadowsocks-py-mu.git >/dev/null 2>&1    #获取程序
+cd shadowsocks-py-mu/shadowsocks    #进入程序目录
+cp config_example.py config.py      #复制配置文件一份
+easy_install pip     #安装pip管理工具
+pip install cymysql     #安装cymysql，pip的mysql控制程序
+到此安装程序完成
+修改数据库即可使用
 Install instruction for MU API user
 -----------------------------------
 1. install a panel which supports MU API (the known one is [SS-Panel V3](https://github.com/orvice/ss-panel))
 2. copy `config_example.py` to `config.py` and edit it following the notes inside (but DO NOT delete the example file). You do not need to edit the MySQL Database section.
 3. TestRun `cd shadowsocks && python servers.py` (not server.py)
-
-Install Instructions for Docker User
---------------------------
-
-1. build the docker: `docker build -t shadowsocks-mu .`
-2. create a config file as above
-3. run the docker (random free ports will be allocated): `docker run -v /PATH/TO/CONFIG/FILE:/shadowsocks/shadowsocks/config.py -p PORT_START-PORT_END shadowsocks-mu`
-   
-   [OR] to use fixed ports: `docker run -v /PATH/TO/CONFIG/FILE:/shadowsocks/shadowsocks/config.py -p PORT_START-PORT_END:PORT_START-PORT_END shadowsocks-mu`
-   
-   *Reminder: `/PATH/TO/CONFIG/FILE` should be an absolute path*
-
 Reminders for Windows User
 --------------------------
 1. install pyuv by `pip install pyuv`
